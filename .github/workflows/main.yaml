@@ -36,7 +36,7 @@ jobs:
         git checkout --orphan gh-pages
         git add main.pdf
         git commit -m "[github actions] deploy"
-        git remote add origin git@github.com:MandaloreUltimate/latex-test-2.git
+        git remote add origin git@github.com:MandaloreUltimate/latex-test.git
         git push --force --set-upstream origin gh-pages
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
